@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>World Generator</title>
+</head>
+
+<style>
+  body {
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+  }
+  
+  button {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #8bc34a;
+    color: white;
+    width: 65px;
+    height: 65px;
+    transition: all 0.01s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3)
+  }
+  
+  button:hover {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3)
+  }
+  
+  button:active {
+    background-color: rgb(104, 159, 56);
+    transform: scale(0.98)
+  }
+  
+  canvas {
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2)
+  }
+  img {
+    display: none;
+  }
+
+</style>
+
+
+<body>
+  <!--<img src="assets/null.png" id="null" alt="">
+  <img src="assets/grass.png" id="grass" alt="">
+  <img src="assets/water.png" id="water" alt="">
+  <img src="assets/sand.png" id="sand" alt="">
+  <img src="assets/leaves.png" id="leaves" alt="">
+  <img src="assets/edge.png" id="edge" alt="">
+
+  <img src="assets/edge.png" id="edge" alt="">
+  <img src="assets/grass_edge.png" id="grass_edge" alt="">-->
+  
+  <canvas></canvas>
+
+</body>
+
+<script src="js/perlin.js"></script>
+<script src="js/average.js"></script>
+
+
+
+<script src="js/classes/player.js"></script>
+<script src="js/classes/animals.js"></script>
+<script src="js/classes/camera.js"></script>
+
+<script src="js/classes/level.js"></script>
+
+
+<script src="js/classes/blocks.js"></script>
+<script src="js/classes/stoneBlock.js"></script>
+<script src="js/classes/grassBlock.js"></script>
+
+
+<script src="js/app.js"></script>
+
+</html>
